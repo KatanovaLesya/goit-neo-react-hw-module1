@@ -5,7 +5,7 @@ const Profile = ({ name, tag, location, image, stats }) => {
     console.log({ name, tag, location, image, stats });
     return (
         <div class="conteiner">
-            <div>
+            <div class="profile-header">
                 <img src={image} alt={`${name}'s avatar`} />
                 <p>{name}</p>
                 <p>@{tag}</p>
@@ -14,15 +14,15 @@ const Profile = ({ name, tag, location, image, stats }) => {
             
             <ul>
                 <li>
-                    <span>Followers:</span>
+                    <span>Followers</span>
                     <span>{stats.followers}</span>
                 </li>
                 <li>
-                    <span>Views:</span>
+                    <span>Views</span>
                     <span>{stats.views}</span>
                 </li>
                 <li>
-                    <span>Likes:</span>
+                    <span>Likes</span>
                     <span>{stats.likes}</span>
                 </li>
             </ul>
