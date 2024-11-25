@@ -1,6 +1,7 @@
 div .conteiner{
     border: 2px solid #1f1f1f;
     border-radius: 8px;
+    min-width: 200px;
     width: 100%;
     margin: 20px auto;
     text-align: center;
@@ -19,7 +20,6 @@ div .profile-header img {
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    margin-bottom: 15px;
     background-color: rgb(47, 47, 47);
     padding: 10px;
     border: none;
@@ -28,7 +28,7 @@ div .profile-header img {
 p {
     margin: 5px 0;
     font-size: 14px;
-    color: black;
+    color: grey;
 }
 
 p:first-of-type {
@@ -38,11 +38,11 @@ p:first-of-type {
 }
 
 p:nth-of-type(2) {
-    color: black;
+    color: grey;
 }
 
 p:nth-of-type(3) {
-    color: black;
+    color: grey;
     font-size: 13px;
 }
 
@@ -60,7 +60,12 @@ li {
     flex: 1;
     padding: 10px 0;
     text-align: center;
+    position: relative;
     
+}
+
+li:not(:last-child) {
+    border-right: 2px solid #797979;
 }
 
 li span:first-of-type {
