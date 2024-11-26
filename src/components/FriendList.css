@@ -1,12 +1,28 @@
 .friend-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     padding: 0;
-    margin: 20px 0;
     list-style: none;
+    background-color: white;
+    border: none;
+  
+ 
 }
 
 .friend-list-item {
-    margin: 10px;
+    margin: 5px;
+    border: none;
+}
+
+.friend-list-item:not(:last-child) {
+    border-right: none;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 375px;
+
 }

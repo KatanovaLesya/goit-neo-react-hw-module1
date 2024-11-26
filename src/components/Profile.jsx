@@ -1,11 +1,12 @@
 import React from 'react';
 import './Profile.css';
+import './common.css';
 
 const Profile = ({ name, tag, location, image, stats }) => {
     console.log({ name, tag, location, image, stats });
     return (
-        <div class="conteiner">
-            <div class="profile-header">
+        <div className="conteiner">
+            <div className="profile-header">
                 <img src={image} alt={`${name}'s avatar`} />
                 <p>{name}</p>
                 <p>@{tag}</p>
